@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.zar {
+  margin: 0 -12px;
+  padding: 12px;
+  background: #83314f;
+  font-size: 13px;
+}
+.tses {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  align-items: center;
+  gap: 24px;
+  height: 68px;
+  margin: 0 -12px 12px;
+  font-size: 12px;
+  background: #f5f5f7cc;
+}
+.tses a {
+  color: inherit;
+  text-decoration: none;
+}
+.tses a:hover {
+  text-decoration: underline;
+}
+.temdeg {
+  height: 16px;
+}
+
+.arawzurgaapro,
+.arawzurgaa {
+  width: 100vw;
+  height: 692px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.arawzurgaapro {
+  background-image: url("./ip16pro.jpg");
+  margin-top: 36px;
+}
+
+.arawzurgaa {
+  background-image: url("./ip16.jpg");
+}
+
+.apple-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(580px, auto);
+  gap: 12px;
+}
+
+.apple-products > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 52px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.airpod {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: white;
+  background-image: url("./airpods2.jpg");
+}
+
+.ipad {
+  grid-column: 2 / 3;
+  background-image: url("./ipadair.jpg");
+}
+
+.tsag {
+  grid-column: 1 / 2;
+  background-image: url("./watch1.jpg");
+}
+
+.macbook {
+  grid-column: 2 / 3;
+  background-image: url("./macbookair.jpg");
+}
+
+.trade {
+  grid-column: 1 / 2;
+  background-image: url("./trade.jpg");
+}
+
+.card {
+  grid-column: 2 / 3;
+  background-image: url("./card.jpg");
+}
+
+.garchig {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.tailbar {
+  justify-content: center;
+  font-size: 21px;
+  margin-top: 6px;
+}
+
+.tovchnuud {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.tovch {
+  font-size: 17px;
+  padding: 11px 21px;
+  border-radius: 980px;
+  border: 1px solid;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tsenkher {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: white;
+}
+
+.zuraas {
+  background: none;
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.tsagaan {
+  border-color: #0071e3;
+  color: #1d1d1f;
+}
+
+.tsagaan-zuraas {
+  background: none;
+  color: #0071e3;
+  border-color: #0071e3;
+}
+
+.scroll {
+  display: flex;
+  gap: 12px;
+  padding: 0 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-card {
+  position: relative;
+
+  flex-shrink: 0;
+  width: 1250px;
+  height: 668px;
+  scroll-snap-align: center;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: none;
+  text-align: left;
+}
+
+.scroll-card-info {
+  color: white;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 700px;
+}
+
+.scroll-card-button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 20px;
+  margin-right: 6px;
+  border: 0;
+  border-radius: 980px;
+  background-color: #fdfbfc;
+  color: #000000;
+  cursor: pointer;
+  white-space: nowrap;
+  text-shadow: none;
+}
+
+.scroll-dots {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 0 14px;
+}
+.scroll-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c7c7cc;
+}
+.scroll-dot:hover,
+.scroll-dot:focus-visible {
+  background: #1d1d1f;
+}
+
+.mini-scroll-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 236px;
+  padding-top: 12px;
+}
+
+.mini-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.mini-scroll {
+  display: flex;
+  width: 4170px;
+  height: 100%;
+  gap: 10px;
+  scrollbar-width: none;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.mini-card {
+  height: 236px;
+  width: 417px;
+  position: absolute;
+  background-color: var(--bg-color, #612525);
+  left: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  animation: slider 60s linear infinite;
+  animation-delay: calc((56.5s / 10) * (var(--number) - 6.5));
+}
+
+@keyframes slider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -417px;
+  }
+}
+
+.mini-card-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mini-card-image-small {
+  width: 196px;
+  height: 196px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.mini-card-image {
+  gap: 30px;
+  object-fit: cover;
+  display: block;
+}
+
+.mini-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.mini-card-image-full {
+  position: absolute;
+
+  width: 417px;
+  height: 236px;
+}
+
+.mini-card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mini-card-caption {
+  position: absolute;
+  left: 15px;
+  bottom: 30px;
+  max-width: 60%;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.mini-card-overlay {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.mini-card:hover .mini-card-overlay {
+  opacity: 1;
+}
+
+.mini-card-button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 980px;
+  background: white;
+  color: #1d1d1f;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .tses {
+    gap: 18px;
+    height: 56px;
+    margin: 0 0 10px;
+    padding: 0 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .tses::-webkit-scrollbar {
+    display: none;
+  }
+
+  .arawzurgaapro,
+  .arawzurgaa {
+    width: 100%;
+    height: 560px;
+    margin-bottom: 8px;
+    background-position: center bottom;
+  }
+  .arawzurgaapro {
+    margin-top: 0;
+  }
+
+  .apple-products {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(480px, auto);
+    gap: 8px;
+    padding: 0 8px 8px;
+  }
+  .apple-products > div {
+    padding-top: 40px;
+    background-position: center bottom;
+  }
+
+  .garchig {
+    font-size: 28px;
+    margin-top: 0;
+  }
+  .tailbar {
+    font-size: 17px;
+    padding: 0 12px;
+  }
+  .tovchnuud {
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .tovch {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .apple-products {
+    display: block;
+  }
+
+  .airpod {
+    background-image: url("./airpodutas.jpg");
+    height: 500px;
+  }
+  .ipad {
+    background-image: url("./airpadutas.jpg");
+    height: 500px;
+  }
+  .tsag {
+    background-image: url("./iwatchutas.jpg");
+    height: 500px;
+  }
+  .macbook {
+    background-image: url("./macbookutas.jpg");
+    height: 500px;
+  }
+  .trade {
+    background-image: url("./tradeiutas.jpg");
+    height: 500px;
+  }
+  .card {
+    background-image: url("./appleutas.png");
+    height: 500px;
+  }
+  .arawzurgaapro {
+    background-image: url("./16proutas.jpg");
+  }
+  .arawzurgaa {
+    background-image: url("./16utas.jpg");
+  }
+  .garchig {
+    padding: 15px;
+  }
+  .scroll-card {
+    height: 495px;
+    width: 274px;
+  }
+
+  .mini-card-image-small,
+  .mini-card-image-full {
+    width: 114px;
+    height: 114px;
+  }
+
+  .mini-card-image {
+    width: 114px;
+    height: 114px;
+    object-fit: cover;
+  }
+  .mini-card {
+    width: 238px;
+    height: 134px;
+  }
+  .mini-card-overlay {
+    width: 238px;
+    height: 134px;
+  }
+
+  .mini-scroll {
+    width: 2380px;
+  }
+}
